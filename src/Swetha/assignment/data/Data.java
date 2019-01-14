@@ -5,6 +5,7 @@ public class Data {
     char classVariable2;
     public void printVariables()
     {
+        //prints default values
        System.out.println("The class member variables default values are:"+classVariable1+" "+classVariable2);
     }
     public void printLocalVariables()
