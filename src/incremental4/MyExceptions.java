@@ -1,4 +1,4 @@
-package incremental2;
+package incremental4;
 
 public class MyExceptions extends Exception{
     MyExceptions(String str)
