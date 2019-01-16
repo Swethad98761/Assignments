@@ -3,12 +3,10 @@ package Incremental;
 class Node<T>{
     T data;
     Node<T> next;
-
     Node(T data){
         this.data = data;
         this.next = null;
     }
-
     public String toString(){
         if(data == null){
             return "null";
@@ -21,12 +19,10 @@ class Node<T>{
 
 class SList<T>{
     Node<T> head = new Node<T>(null);
-
     public String toString(){
         if(head.next == null){
             return "List is empty.";
         }
-
         SListIterator<T> iterator = iterator();
         String listInStringFormat = "";
         while(iterator.hasNext()){
@@ -34,7 +30,6 @@ class SList<T>{
         }
         return listInStringFormat+" NULL";
     }
-
     SListIterator<T> iterator(){
         return new SListIterator<T>(head);
     }
@@ -77,15 +72,12 @@ class SListIterator<T>{
         current = temp;
         temp.next = null;
     }
-
 }
 
 public class SingleLinkedList {
-
     public static void main(String[] args) {
         SList<Integer> list = new SList<Integer>();
         SListIterator<Integer> iterator = list.iterator();
-
         System.out.println(list);
         iterator.insert(35);
         System.out.println(list);
@@ -102,6 +94,5 @@ public class SingleLinkedList {
         System.out.println(list);
         iterator.remove();
         System.out.println(list);
-
     }
 }
