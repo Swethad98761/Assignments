@@ -1,5 +1,6 @@
 package functions_assignment;
-import java.util.*;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 import java.util.logging.Logger;
 
 /*
