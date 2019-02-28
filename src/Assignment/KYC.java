@@ -57,7 +57,11 @@ public class KYC {
                 LocalDate startingDate = closestAnniversaryDate.minusDays(30);
                 LocalDate endingDate = closestAnniversaryDate.plusDays(30);
                 if(isInBetweenDates(startingDate,endingDate,currentDate)) {
-                    System.out.println(formatter.format(startingDate)+" "+formatter.format(currentDate));
+                    if(startingDate.compareTo(currentDate) <0)
+                    {
+                        System.out.println(formatter.format(startingDate)+" "+formatter.format(currentDate));
+
+                    }
                 }
                 else {
                     System.out.println(formatter.format(startingDate)+" "+formatter.format(endingDate));
